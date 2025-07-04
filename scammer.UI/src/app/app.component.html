@@ -1,0 +1,14 @@
+<div class="main">
+  <div>
+    <h3>Sizga bir yaxshi habar bor 😊</h3>
+    @if(loading){
+      <p>YUKLANMOQDA...</p>
+    }
+    @else {
+      <h4>Ma'lumotlaringiz yuklandi!!!</h4>
+      <h4>Barchasini ichki ishlarga topshiramiz)</h4>
+      <pre>{{ data | json }}</pre>
+      <h4>Omon bo'ling!</h4>
+    }
+  </div>
+</div>
